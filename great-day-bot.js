@@ -20,7 +20,8 @@ function tweetEvent(eventMsg) {
 	var text = eventMsg.text;
 	var from = eventMsg.user.screen_name;
 	
-	if (replyto === 'CrispyYachtBot') {
+	// Place your bot's handle here
+	if (replyto === 'YourHandleHere') { 
 		var newtweet = 'Hi @' + from + ', have a great day!';
 		tweetIt(newtweet);
 	}
