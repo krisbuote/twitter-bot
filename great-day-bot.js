@@ -27,7 +27,7 @@ function tweetEvent(eventMsg) {
 	}
 }
 
-
+// A function to post tweets
 function tweetIt(txt) {
 	
 	var statusObj = {
