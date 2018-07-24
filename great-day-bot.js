@@ -1,6 +1,6 @@
 console.log('The great day bot is firing up');
 
-var Twit = require('twit');
+var Twit = require('twit'); // You will need the twit package: https://www.npmjs.com/package/twit
 
 var twitter_api = require('./config').twitter_api; // Load your twitter API keys from config
 var T = new Twit(twitter_api);
@@ -13,7 +13,7 @@ stream.on('tweet', tweetEvent);
 
 function tweetEvent(eventMsg) {
 	
-	//print out tweet that came in
+	// print out tweet that came in
 	console.log(eventMsg.text);
 	
 	var replyto = eventMsg.in_reply_to_screen_name;
